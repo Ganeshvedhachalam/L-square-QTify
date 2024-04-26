@@ -1,0 +1,46 @@
+.navbar {
+    background-color: greenyellow;
+    color: blanchedalmond;
+    padding: 20px; /* Increase padding for better spacing */
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center; /* Align items vertically in the center */
+    /* flex-direction: row; */
+    min-width:50;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 18px; /* Increase font size for better visibility */
+    font-weight: bold; /* Add bold font weight */
+}
+
+.navbar-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    margin-right: 5px;
+    padding: 6px; /* Add padding for better input field appearance */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+.feedbackbtn {
+    background-color: black;
+    color: chartreuse;
+    border: none; /* Remove default button border */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 6px 12px; /* Add padding to the button */
+    cursor: pointer; /* Add pointer cursor for better UX */
+}
+
+.feedbackbtn:hover {
+    background-color: #333; /* Change button color on hover */
+}
