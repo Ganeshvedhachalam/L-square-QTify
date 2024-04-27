@@ -60,8 +60,6 @@
   }
   
   .custom-button:hover { 
-    background-color: chartreuse ;
-    color: black ;
-    cursor: pointer;
+    cursor: pointer !important;
   }
   
