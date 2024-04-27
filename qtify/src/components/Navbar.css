@@ -35,7 +35,8 @@
 
 .search-button:hover{
 
-    background-color: #8112ca !important;
+    background-color: #8112ca ;
+    cursor: pointer;
     /* transition: 3ms;
     transform:rotate(); */
     
@@ -59,7 +60,10 @@
     font-family: "Roboto, Helvetica, Arial, sans-serif, 'Poppins'";
   }
   
-  .custom-button:hover { 
-    cursor: pointer !important;
+ 
+  .custom-button:hover {
+    background-color: chartreuse;
+    color: black;
+    cursor: pointer !important; /* Set cursor to pointer on hover */
   }
   
