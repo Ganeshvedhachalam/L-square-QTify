@@ -1,46 +1,48 @@
-.navbar {
-    background-color: greenyellow;
-    color: blanchedalmond;
-    padding: 20px; /* Increase padding for better spacing */
-    border: 2px solid black;
-}
-
 .container {
     display: flex;
     justify-content: space-between;
-    align-items:center; /* Align items vertically in the center */
-    /* flex-direction: row; */
-    min-width:50;
-}
-
-.navbar-brand {
-    text-decoration: none;
-    color: blanchedalmond;
-    font-size: 18px; /* Increase font size for better visibility */
-    font-weight: bold; /* Add bold font weight */
-}
-
-.navbar-form {
-    display: flex;
     align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #34C94B;
+}
+
+.logo-image {
+    width: 25px; /* Set the desired width for the logo image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.search-container {
+    display: flex;
+    justify-content:space-between;
+   max-width: fit-content;
+   min-width: auto;
+    
+}
+.form-control{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+.search-button {
+    /* background-color: blue !important;
+    color: yellowgreen !important;
+    width:fit-content; */
+}
+.form-control:focus{
+    width: 300px;
+}
+.search-button:hover{
+
+    background-color: #8112ca !important;
+    /* transition: 3ms;
+    transform:rotate(); */
+    
+
 }
 
 .form-control {
-    margin-right: 5px;
-    padding: 6px; /* Add padding for better input field appearance */
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Add border radius for rounded corners */
+    margin-right: 10px; /* Adjust margin between input and button */
 }
 
-.feedbackbtn {
-    background-color: black;
-    color: chartreuse;
-    border: none; /* Remove default button border */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    padding: 6px 12px; /* Add padding to the button */
-    cursor: pointer; /* Add pointer cursor for better UX */
-}
-
-.feedbackbtn:hover {
-    background-color: #333; /* Change button color on hover */
-}
