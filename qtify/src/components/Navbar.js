@@ -4,6 +4,8 @@ import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import SaveIcon from "@mui/icons-material/Save";
 import { useSnackbar } from 'notistack';
+import Logo from './Logo';
+import Buttonforproject from './Button';
 
 function Navbar() {
     const { enqueueSnackbar } = useSnackbar();
@@ -12,15 +14,13 @@ function Navbar() {
         <>
          <nav className="navbar">
             <div className="container">
+                <div ><Logo/></div>
 
-                <a href="/" className="navbar-brand">
-                    <img src="https://th.bing.com/th?id=OIP.L1dgSDIjuIZAZvEAf5_cMgAAAA&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-                     alt="Qtify Music" className="logo-image" />
-                </a>
+               
 
                 
                     <div className="search-container">
-                        <input type="text" className="form-control" placeholder="Search for a song" />
+                        <input type="text" className="form-control" placeholder="Search a song of your choice" />
 
                         <Button className="search-button">
                             <SearchIcon />
@@ -28,15 +28,15 @@ function Navbar() {
                     </div>
                     
                     
-                    <Button 
+                    {/* <Button 
                         variant="outlined" 
                         sx={{ backgroundColor: 'black', color:"chartreuse", '&:hover': { backgroundColor: 'chartreuse', color: 'black', } }} 
                         className='muiButton' 
                         startIcon={<SaveIcon/>}
                     >
                         Give feedback
-                    </Button>
-                
+                    </Button> */}
+                <Buttonforproject/>
             </div>
         </nav>
         </>

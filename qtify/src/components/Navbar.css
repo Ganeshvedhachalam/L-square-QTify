@@ -4,11 +4,13 @@
     align-items: center;
     padding: 10px 20px; /* Adjust padding as needed */
     background-color: #34C94B;
+    height: 50px;
 }
 
 .logo-image {
-    width: 25px; /* Set the desired width for the logo image */
+    width: 70px; /* Set the desired width for the logo image */
     height: auto; /* Maintain aspect ratio */
+    padding: 5px;
 }
 
 .search-container {
@@ -30,9 +32,7 @@
     color: yellowgreen !important;
     width:fit-content; */
 }
-.form-control:focus{
-    width: 300px;
-}
+
 .search-button:hover{
 
     background-color: #8112ca !important;
@@ -43,6 +43,21 @@
 }
 
 .form-control {
-    margin-right: 10px; /* Adjust margin between input and button */
+    /* margin-right: 10px; Adjust margin between input and button */
+    width: 400px;
 }
-
+.form-control:focus{
+    width: 600px;
+}
+.custom-button {
+    background-color: black;
+    color: #34C94B;
+    border: 2px solid;
+    border-radius: 15px !important ; /* Add !important to ensure it takes precedence */
+  }
+  
+  .custom-button:hover { 
+    background-color: chartreuse ;
+    color: black ;
+  }
+  
