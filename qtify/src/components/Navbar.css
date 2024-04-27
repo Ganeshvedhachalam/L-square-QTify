@@ -59,8 +59,9 @@
     font-family: "Roboto, Helvetica, Arial, sans-serif, 'Poppins'";
   }
   
-  /* .custom-button:hover { 
+  .custom-button:hover { 
     background-color: chartreuse ;
     color: black ;
+    cursor: pointer;
   }
-   */
+  
