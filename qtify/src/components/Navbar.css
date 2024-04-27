@@ -50,14 +50,17 @@
     width: 600px;
 }
 .custom-button {
+    width: 150px;
+    height: 40px;
     background-color: black;
     color: #34C94B;
     border: 2px solid;
-    border-radius: 15px !important ; /* Add !important to ensure it takes precedence */
+    border-radius: 15px  ; /* Add !important to ensure it takes precedence */
+    font-family: "Roboto, Helvetica, Arial, sans-serif, 'Poppins'";
   }
   
-  .custom-button:hover { 
+  /* .custom-button:hover { 
     background-color: chartreuse ;
     color: black ;
   }
-  
+   */
