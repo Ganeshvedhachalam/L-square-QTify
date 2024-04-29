@@ -6,6 +6,7 @@ import SaveIcon from "@mui/icons-material/Save";
 import { useSnackbar } from 'notistack';
 import Logo from './Logo';
 import Buttonforproject from './Button';
+import Hero from './Hero';
 
 function Navbar() {
     const { enqueueSnackbar } = useSnackbar();
@@ -22,8 +23,10 @@ function Navbar() {
                     <div className="search-container">
                         <input type="text" className="form-control" placeholder="Search a song of your choice" />
 
-                        <Button className="search-button">
-                            <SearchIcon />
+                        <Button size='10px' className="search-button"
+                        sx={{ backgroundColor:"white" ,minWidth:"45px" ,border:" 1px solid black" ,color : "black"} }
+                        >
+                            <SearchIcon/>
                         </Button>
                     </div>
                     
@@ -39,6 +42,8 @@ function Navbar() {
                 <Buttonforproject/>
             </div>
         </nav>
+        <Hero/>
+
         </>
     );
 }
