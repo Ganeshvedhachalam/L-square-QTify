@@ -22,16 +22,19 @@
 }
 .form-control{
     border: 1px solid black;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    
 }
 
 
 
 .search-button {
-    /* background-color: blue !important;
-    color: yellowgreen !important;
-    width:fit-content; */
-}
+
+    /* background-color: white!important; */
+    /* color: black !important;
+    border:1px solid black !important; */
+
+} 
 
 .search-button:hover{
 
@@ -56,7 +59,7 @@
     background-color: black;
     color: #34C94B;
     border: 2px solid;
-    border-radius: 15px  ; /* Add !important to ensure it takes precedence */
+    border-radius: 15px  !important; /* Add !important to ensure it takes precedence */
     font-family: "Roboto, Helvetica, Arial, sans-serif, 'Poppins'";
   }
   

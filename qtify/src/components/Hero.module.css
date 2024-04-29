@@ -1,0 +1,10 @@
+.heroImage{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    min-width: 100%;
+    min-height:300px;
+
+}
