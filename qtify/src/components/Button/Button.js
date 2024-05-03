@@ -5,7 +5,7 @@ function Buttonforproject (){
     <>
    <Button className="custom-button"
           // variant="outlined" 
-          sx={{ backgroundColor: 'black', color:" #34C94B", border:"2px",
+          sx={{ backgroundColor: 'black', color:" #34C94B", border:"2px",minHeight:"70px", minWidth:"100px",
                 fontFamily: 'Poppins'
                 // "Roboto, Helvetica, Arial, sans-serif, 'Poppins'"
               }} 

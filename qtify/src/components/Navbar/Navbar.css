@@ -5,10 +5,12 @@
     padding: 10px 20px; /* Adjust padding as needed */
     background-color: #34C94B;
     height: 50px;
+    min-height:100px ;
 }
 
 .logo-image {
     width: 70px; /* Set the desired width for the logo image */
+    min-width: 100px;
     height: auto; /* Maintain aspect ratio */
     padding: 5px;
 }
@@ -17,7 +19,8 @@
     display: flex;
     justify-content:space-between;
    max-width: fit-content;
-   min-width: auto;
+
+   min-height: 70px;
     
 }
 .form-control{
@@ -49,6 +52,7 @@
 .form-control {
     /* margin-right: 10px; Adjust margin between input and button */
     width: 400px;
+    
 }
 .form-control:focus{
     width: 600px;

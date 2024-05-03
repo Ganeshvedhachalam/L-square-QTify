@@ -2,14 +2,11 @@ import React from 'react';
 import "./Navbar.css";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
-import SaveIcon from "@mui/icons-material/Save";
-import { useSnackbar } from 'notistack';
-import Logo from './Logo';
-import Buttonforproject from './Button';
-import Hero from './Hero';
+import Logo from '../Logo';
+import Buttonforproject from '../Button/Button';
 
 function Navbar() {
-    const { enqueueSnackbar } = useSnackbar();
+
    
     return (
         <>
@@ -42,8 +39,7 @@ function Navbar() {
                 <Buttonforproject/>
             </div>
         </nav>
-        <Hero/>
-
+       
         </>
     );
 }
