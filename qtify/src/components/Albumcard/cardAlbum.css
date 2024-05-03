@@ -1,0 +1,14 @@
+/* .ALBUMCARD{
+    display: flex  !important ;
+    flex-direction:column!important ;
+    background-color:orange !important;
+    color:white !important;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    justify-content: flex-start;
+} */
+.follows{
+    background-color: white;
+    width:200px;
+}
