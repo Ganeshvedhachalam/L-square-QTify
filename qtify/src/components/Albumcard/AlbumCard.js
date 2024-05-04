@@ -3,7 +3,8 @@ import { Card, CardContent, CardMedia, Chip, Typography } from "@mui/material";
 
 function AlbumCard({ album }) {
   return (
-    <Card sx={{ maxWidth: 250, backgroundColor: "transparent", display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 2 }}>
+    <Card sx={{ maxWidth: 250, backgroundColor: "transparent", display: "flex", 
+    flexDirection: "column", alignItems: "center", marginBottom: 2 }}>
       <CardMedia
         component="img"
         image={album.image}
@@ -13,7 +14,10 @@ function AlbumCard({ album }) {
       <CardContent style={{padding:0 }}>
       
         <div style={{ display: "flex", justifyContent: "center",backgroundColor:"white" ,minWidth:"300px"}}>
-          <Chip color="primary" label={`${album.follows}  follows`} size="large" variant="filled" clickable style={{ width: 100, marginRight: 8 }} />
+
+          <Chip color="primary" label={`${album.follows}  follows`} size="large"
+           variant="filled" clickable style={{ width: 100, marginRight: 0 }} />
+           
         </div>
 
        
