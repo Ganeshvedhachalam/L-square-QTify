@@ -86,8 +86,8 @@ function Section({title,apiUrl}) {
       <Typography variant="h4" align="left" gutterBottom color="white" padding= "0px 0px 0px 100px">
         {title}
       </Typography>
-      <Button onClick={collapsetoggle} variant="contained" >
-        {iscollapsed ? "Show carousel" : "Show grid"}
+      <Button onClick={collapsetoggle}  >
+        {iscollapsed ? <h1>Show carousel</h1> : <h1>Show All</h1> }
       </Button>
     </Grid>
     <Grid item xs={12}>
