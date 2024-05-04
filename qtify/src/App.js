@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import { SnackbarProvider } from 'notistack';
 import Section from './components/Albumcard/Section';
 import Hero from './components/Herocomp/Hero';
+import SongFilterSection from './components/Albumcard/SongFiterSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <div> 
          <Section title={"Topalbum"} apiUrl={"https://qtify-backend-labs.crio.do/albums/top"}/>
          <Section title={"Newalbum"} apiUrl={"https://qtify-backend-labs.crio.do/albums/new"}/>
+         <SongFilterSection/>
           </div>       
         </SnackbarProvider>
          
