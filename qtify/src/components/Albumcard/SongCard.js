@@ -6,15 +6,15 @@ function SongCard({ album }) {
     flexDirection: "column", alignItems: "center", marginBottom: 2 }}>
       <CardMedia
         component="img"
-        image={album.image}
-        alt={album.title}
+        image={album.images[0].url}
+        alt={album.name}
         sx={{ height: 300, width: 300, objectFit: 'cover' }}
       />
       <CardContent style={{padding:0 }}>
       
         <div style={{ display: "flex", justifyContent: "center",backgroundColor:"white" ,minWidth:"300px"}}>
 
-          <Chip color="primary" label={`${album.likes} likes`} size="large"
+          <Chip color="primary" label={`${album.name}`} size="large"
            variant="filled" clickable style={{ width: 100, marginRight: 0 }} />
            
         </div>
@@ -22,7 +22,7 @@ function SongCard({ album }) {
        
       </CardContent>
       <Typography gutterBottom variant="h6" component="div" color="white" align="center">
-          {album.title}
+          {album.name}
         </Typography>
     </Card>
   );

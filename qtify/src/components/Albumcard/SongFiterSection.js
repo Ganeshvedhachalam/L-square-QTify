@@ -16,11 +16,17 @@ function SongFilterSection() {
     const fetchData = async () => {
       try {
         const [songsResponse, genresResponse] = await Promise.all([
-          axios.get("https://qtify-backend-labs.crio.do/songs"),
-          axios.get("https://qtify-backend-labs.crio.do/genres")
+          // axios.get("https://qtify-backend-labs.crio.do/songs"),
+          axios.get("https://api.spotify.com/v1/search?q=A.R.%20Rahman&type=album&market=IN" ,{headers:{
+            Authorization: `Bearer ${localStorage.getItem("spotify_token")}`,
+          }} ),
+          
+          axios.get("https://api.spotify.com/v1/search?q=A.R.%20Rahman&type=album&market=IN",{headers:{
+            Authorization: `Bearer ${localStorage.getItem("spotify_token")}`,
+          }} ),
         ]);
         setSongs(songsResponse.data);
-        setGenres(genresResponse.data.data);
+        setGenres(genresResponse.data?.albums?.items);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -41,11 +47,12 @@ function SongFilterSection() {
     return <Typography>Loading...</Typography>;
   }
 
-  let filteredSongs = songs;
-  if (selectedGenre !== "All") {
-    filteredSongs = songs.filter(song => song.genre.key === selectedGenre);
-  }
+  let filteredSongs = songs?.albums?.items || [];
+  // if (selectedGenre !== "All") {
+  //   filteredSongs = songs.filter(song => song.genre.key === selectedGenre);
+  // }
   console.log("Filtered Songs:", filteredSongs);
+  console.log("All genres:", genres);
 
   return (
     <Box>
@@ -54,9 +61,9 @@ function SongFilterSection() {
       </Typography>
       <Tabs sx={{marginLeft:15,marginBottom:5}} value={selectedGenre} onChange={handleGenreChange}>
         <Tab  sx={{ backgroundColor: "white" ,color:"green"}} label="All" value="All" />
-        {genres.map(genre => (
-          <Tab sx={{ backgroundColor: "white", color:"green"}} key={genre.key} label={genre.label} value={genre.key} />
-        ))}
+        {/* {genres.map(genre => (
+          <Tab sx={{ backgroundColor: "white", color:"green"}} key={genre.id} label={genre.id} value={genre.name} />
+        ))} */}
       </Tabs>
       {/* <Carousel albums={filteredSongs} /> */}
       <SongCarousel albums ={filteredSongs}/>
@@ -65,3 +72,4 @@ function SongFilterSection() {
 }
 
 export default SongFilterSection;
+

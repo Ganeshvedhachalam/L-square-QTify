@@ -38,7 +38,7 @@ const Carousel = ({ albums }) => {
         <Swiper
           spaceBetween={20}
           slidesPerView={7}
-          loop={true}
+          loop={albums.length>2}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
           {albums.map((album, index) => (
