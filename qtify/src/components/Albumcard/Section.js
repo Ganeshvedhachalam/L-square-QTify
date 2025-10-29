@@ -11,8 +11,7 @@ function Section({ title, apiUrl }) {
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
   const [iscollapsed, setCollapsed] = useState(false);
-  const clientId = "6276f465b33b44b3a3449eed925e6199";
-  const clientSecret = "ea26e107a9fe4cd7830c94e48f621f11";
+
 
   // const SpotifyToken = async (clientId, clientSecret) => {
   //   const response = await axios.post(
