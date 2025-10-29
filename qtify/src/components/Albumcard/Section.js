@@ -10,6 +10,7 @@ function Section({ title, apiUrl }) {
   const { enqueueSnackbar } = useSnackbar();
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
+  
   const [iscollapsed, setCollapsed] = useState(false);
 
 
