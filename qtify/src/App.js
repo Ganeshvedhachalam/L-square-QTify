@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     document.body.setAttribute("data-theme", appTheme);
     localStorage.removeItem("code_verifier");
-    localStorage.removeItem("spotify_token");
+    // localStorage.removeItem("spotify_token");
   }, [appTheme]);
 
   // useEffect(() => {
