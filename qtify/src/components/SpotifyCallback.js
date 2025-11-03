@@ -33,6 +33,8 @@ export default function SpotifyCallback({ handleSetToken }) {
           console.log("Spotify token response:", data); // 👀 Add this line
           if (data.access_token) {
             localStorage.setItem("spotify_token", data.access_token);
+            localStorage.setItem("token_expires_at", Date.now() + 3600 * 1000);
+
             handleSetToken(data.access_token);
             console.log("Token stored, navigating to home.", data.access_token);
 

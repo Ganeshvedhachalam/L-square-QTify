@@ -21,12 +21,22 @@ function App() {
   const navigate = useNavigate();
   const [token, setToken] = useState(localStorage.getItem("spotify_token"));
   const [appTheme, setAppTheme] = useState("dark");
-  
+
   useEffect(() => {
-    document.body.setAttribute("data-theme", appTheme);
-    localStorage.removeItem("code_verifier");
+    const token = localStorage.getItem("spotify_token");
+    const expiresAt = localStorage.getItem("token_expires_at");
+     if (!token || !expiresAt || Date.now() > parseInt(expiresAt)) {
+    // token is missing or expired
+    localStorage.removeItem("spotify_token");
+    localStorage.removeItem("token_expires_at");
+    setToken(null);
+  } else {
+    setToken(token);
+  }
+    // document.body.setAttribute("data-theme", appTheme);
+    // localStorage.removeItem("code_verifier");
     // localStorage.removeItem("spotify_token");
-  }, [appTheme]);
+  }, [appTheme, token]);
 
   // useEffect(() => {
   //   if (process.env.NODE_ENV === "development") {
