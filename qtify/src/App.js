@@ -21,6 +21,7 @@ function App() {
   const navigate = useNavigate();
   const [token, setToken] = useState(localStorage.getItem("spotify_token"));
   const [appTheme, setAppTheme] = useState("dark");
+  
   useEffect(() => {
     document.body.setAttribute("data-theme", appTheme);
     localStorage.removeItem("code_verifier");
