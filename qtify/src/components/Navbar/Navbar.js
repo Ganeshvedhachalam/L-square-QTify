@@ -5,16 +5,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import Logo from "../Logo";
 import Buttonforproject from "../Button/Button";
 
-function Navbar({ handleSetToken ,handleTheme,themeState}) {
-
-    const handleThemeToggle = () => {       
-      handleTheme((prev) => (prev === "dark" ? "light" : "dark"));
-    };
+function Navbar({ handleSetToken, handleTheme, themeState }) {
+  const handleThemeToggle = () => {
+    handleTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
   const handleLogout = () => {
     // Logic for logout
     localStorage.removeItem("spotify_token");
     localStorage.removeItem("code_verifier");
-    // window.location.reload();    
+    // window.location.reload();
     // window.location.href = "/";
 
     handleSetToken(null);
@@ -61,7 +60,7 @@ function Navbar({ handleSetToken ,handleTheme,themeState}) {
                     </Button> */}
           <Buttonforproject
             onClick={() => handleThemeToggle()}
-            message={themeState==="dark"?"Light Mode":"Dark Mode"}
+            message={themeState === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
           />
           <Buttonforproject message={"give feedback"} />
           <Buttonforproject onClick={() => handleLogout()} message={"logOut"} />

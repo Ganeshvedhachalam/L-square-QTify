@@ -2,10 +2,15 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
     min-width: 100%;
     min-height:400px;
     height: 400px;
 
 }
+
+/* .light{
+    background-color: #f8f9fa;
+    color: #222;
+} */

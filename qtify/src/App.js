@@ -79,7 +79,7 @@ function App() {
         path="/"
         element={
           token ? (
-            <div className="App">
+            <div data-theme={appTheme} className={`App`}>
               <header className="App-header">
                 <SnackbarProvider>
                   <Navbar
@@ -87,7 +87,7 @@ function App() {
                     handleTheme={setAppTheme}
                     themeState={appTheme}
                   />
-                  <Hero />
+                  <Hero appTheme={appTheme} />
                   <div>
                     <Section
                       title="Top Album"

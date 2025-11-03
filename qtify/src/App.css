@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+[data-theme='light'] {
+  background-color: #f8f9fa;
+  color: #222;
+}
+[data-theme='dark'] {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+/* .App.light {
+  background-color: #f8f9fa;
+  color: #222;
+} */
+/* .App.dark {
+  background-color: #121212;
+  color: #f8f9fa;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
