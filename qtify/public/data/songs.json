@@ -172,29 +172,6 @@
         "uri": "spotify:album:alb107"
       },
       {
-        "album_type": "album",
-        "artists": [{ "name": "Radiant Collective", "id": "art108" }],
-        "available_markets": ["US", "IN", "EU"],
-        "external_urls": { "spotify": "#" },
-        "href": "#",
-        "id": "alb108",
-        "genre": { "key": "pop", "label": "pop" },
-        "images": [
-          {
-            "height": 640,
-            "url": "images/thangapoovey.png",
-            "width": 640
-          }
-        ],
-        "name": "Thangapoovey",
-        "track": "audio/Thangapoovey.mp3",
-        "release_date": "2024-05-15",
-        "release_date_precision": "day",
-        "total_tracks": 12,
-        "type": "album",
-        "uri": "spotify:album:alb108"
-      },
-      {
         "album_type": "single",
         "artists": [{ "name": "Skyline Nova", "id": "art109" }],
         "available_markets": ["IN", "US"],
