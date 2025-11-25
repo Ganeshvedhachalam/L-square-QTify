@@ -1,0 +1,365 @@
+{
+  "albums": {
+    "items": [
+      {
+        "album_type": "album",
+        "artists": [
+          { "name": "Nova Pulse", "id": "art001" }
+        ],
+        "available_markets": ["US", "IN", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb001",
+        "images": [
+          { "height": 640, "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=640", "width": 640 },
+          { "height": 300, "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300", "width": 300 },
+          { "height": 64,  "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=64",  "width": 64 }
+        ],
+        "name": "Studio Dreams",
+        "release_date": "2023-12-12",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:alb001"
+      },
+
+      {
+        "album_type": "album",
+        "artists": [
+          { "name": "Echo Smithers", "id": "art002" }
+        ],
+        "available_markets": ["US", "IN"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb002",
+        "images": [
+          { "height": 640, "url": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=640", "width": 640 },
+          { "height": 300, "url": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=300", "width": 300 },
+          { "height": 64,  "url": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=64",  "width": 64 }
+        ],
+        "name": "Warm Frequencies",
+        "release_date": "2024-02-20",
+        "release_date_precision": "day",
+        "total_tracks": 14,
+        "type": "album",
+        "uri": "spotify:album:alb002"
+      },
+
+      {
+        "album_type": "single",
+        "artists": [
+          { "name": "VoxWave", "id": "art003" }
+        ],
+        "available_markets": ["US", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb003",
+        "images": [
+          { "height": 640, "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=640", "width": 640 },
+          { "height": 300, "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300", "width": 300 },
+          { "height": 64,  "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=64",  "width": 64 }
+        ],
+        "name": "Soundcheck",
+        "release_date": "2024-06-01",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb003"
+      },
+
+      {
+        "album_type": "album",
+        "artists": [
+          { "name": "RetroSynth", "id": "art004" }
+        ],
+        "available_markets": ["US", "IN", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb004",
+        "images": [
+          { "height": 640, "url": "https://images.unsplash.com/photo-1485579149621-3123dd979885?w=640", "width": 640 },
+          { "height": 300, "url": "https://images.unsplash.com/photo-1485579149621-3123dd979885?w=300", "width": 300 },
+          { "height": 64,  "url": "https://images.unsplash.com/photo-1485579149621-3123dd979885?w=64",  "width": 64 }
+        ],
+        "name": "Neon Grooves",
+        "release_date": "2024-04-18",
+        "release_date_precision": "day",
+        "total_tracks": 10,
+        "type": "album",
+        "uri": "spotify:album:alb004"
+      },
+
+      {
+        "album_type": "album",
+        "artists": [
+          { "name": "The Midnight Echo", "id": "art005" }
+        ],
+        "available_markets": ["IN", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb005",
+        "images": [
+          { "height": 640, "url": "https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?w=640", "width": 640 },
+          { "height": 300, "url": "https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?w=300", "width": 300 },
+          { "height": 64,  "url": "https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?w=64",  "width": 64 }
+        ],
+        "name": "Midnight Studio",
+        "release_date": "2023-08-30",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:alb005"
+      },
+
+      {
+  "album_type": "album",
+  "artists": [
+    { "name": "Electric Drift", "id": "art007" }
+  ],
+  "available_markets": ["US", "IN"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb007",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=64",  "width": 64 }
+  ],
+  "name": "Electric Flow",
+  "release_date": "2023-11-01",
+  "release_date_precision": "day",
+  "total_tracks": 13,
+  "type": "album",
+  "uri": "spotify:album:alb007"
+},
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "Beat Collective", "id": "art008" }
+  ],
+  "available_markets": ["US", "IN", "EU"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb008",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=64",  "width": 64 }
+  ],
+  "name": "Studio Beats",
+  "release_date": "2024-01-26",
+  "release_date_precision": "day",
+  "total_tracks": 15,
+  "type": "album",
+  "uri": "spotify:album:alb008"
+},
+{
+  "album_type": "single",
+  "artists": [
+    { "name": "Skyline Records", "id": "art009" }
+  ],
+  "available_markets": ["IN", "US"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb009",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=64",  "width": 64 }
+  ],
+  "name": "Vinyl Echo",
+  "release_date": "2024-08-10",
+  "release_date_precision": "day",
+  "total_tracks": 1,
+  "type": "album",
+  "uri": "spotify:album:alb009"
+},
+
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "BrightWaves", "id": "art011" }
+  ],
+  "available_markets": ["EU", "US"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb011",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=64",  "width": 64 }
+  ],
+  "name": "Acoustic Flow",
+  "release_date": "2023-09-14",
+  "release_date_precision": "day",
+  "total_tracks": 10,
+  "type": "album",
+  "uri": "spotify:album:alb011"
+},
+
+{
+  "album_type": "single",
+  "artists": [
+    { "name": "Bass Theory", "id": "art013" }
+  ],
+  "available_markets": ["IN"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb013",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=64",  "width": 64 }
+  ],
+  "name": "Bass Drop",
+  "release_date": "2024-11-01",
+  "release_date_precision": "day",
+  "total_tracks": 1,
+  "type": "album",
+  "uri": "spotify:album:alb013"
+},
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "Digital Echoes", "id": "art014" }
+  ],
+  "available_markets": ["US", "EU"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb014",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=64",  "width": 64 }
+  ],
+  "name": "Digital Pulse",
+  "release_date": "2023-06-21",
+  "release_date_precision": "day",
+  "total_tracks": 12,
+  "type": "album",
+  "uri": "spotify:album:alb014"
+},
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "Stereo Kings", "id": "art015" }
+  ],
+  "available_markets": ["IN", "US"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb015",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=64",  "width": 64 }
+  ],
+  "name": "Stereo Nights",
+  "release_date": "2024-03-02",
+  "release_date_precision": "day",
+  "total_tracks": 14,
+  "type": "album",
+  "uri": "spotify:album:alb015"
+},
+
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "Synth Garden", "id": "art017" }
+  ],
+  "available_markets": ["IN", "EU"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb017",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=64",  "width": 64 }
+  ],
+  "name": "Garden of Synths",
+  "release_date": "2024-09-11",
+  "release_date_precision": "day",
+  "total_tracks": 16,
+  "type": "album",
+  "uri": "spotify:album:alb017"
+},
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "Waveform Trio", "id": "art018" }
+  ],
+  "available_markets": ["US", "IN", "EU"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb018",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=64",  "width": 64 }
+  ],
+  "name": "Analog Drift",
+  "release_date": "2023-07-18",
+  "release_date_precision": "day",
+  "total_tracks": 8,
+  "type": "album",
+  "uri": "spotify:album:alb018"
+},
+{
+  "album_type": "single",
+  "artists": [
+    { "name": "Crystal Vox", "id": "art019" }
+  ],
+  "available_markets": ["US"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb019",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=600",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=200",
+          "width": 64
+        }
+      ],
+  "name": "Crystal Break",
+  "release_date": "2024-12-02",
+  "release_date_precision": "day",
+  "total_tracks": 1,
+  "type": "album",
+  "uri": "spotify:album:alb019"
+},
+{
+  "album_type": "album",
+  "artists": [
+    { "name": "Neon Horizon", "id": "art020" }
+  ],
+  "available_markets": ["US", "IN"],
+  "external_urls": { "spotify": "#" },
+  "href": "#",
+  "id": "alb020",
+  "images": [
+    { "height": 640, "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=640", "width": 640 },
+    { "height": 300, "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=300", "width": 300 },
+    { "height": 64,  "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=64",  "width": 64 }
+  ],
+  "name": "Neon Horizon",
+  "release_date": "2023-04-04",
+  "release_date_precision": "day",
+  "total_tracks": 12,
+  "type": "album",
+  "uri": "spotify:album:alb020"
+}
+
+ 
+   
+    ]
+  }
+}

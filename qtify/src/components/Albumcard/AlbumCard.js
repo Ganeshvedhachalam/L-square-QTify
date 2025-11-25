@@ -58,7 +58,7 @@ function AlbumCard({ album,albumType }) {
         gutterBottom
         variant="h6"
         component="div"
-        color="white"
+        color="var(--text-color)"
         align="center"
       >
         {album?.name}

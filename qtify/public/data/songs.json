@@ -1,0 +1,360 @@
+{
+  "tracks": {
+    "items": [
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Stellar Sonics", "id": "art102" }],
+        "available_markets": ["US", "IN", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb102",
+        "genre": { "key": "pop", "label": "Pop" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/ethanaSaami.png",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Ethana saami",
+        "track": "audio/Ethana_Saami.mp3",
+        "release_date": "2024-01-03",
+        "release_date_precision": "day",
+        "total_tracks": 13,
+        "type": "album",
+        "uri": "spotify:album:alb102"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Echo Frame", "id": "art103" }],
+        "available_markets": ["US", "IN"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb103",
+        "genre": { "key": "rock", "label": "rock" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/jailer.png",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64",
+            "width": 64
+          }
+        ],
+        "name": "jailer",
+        "track": "audio/Jailer_Annoucement_Theme.mp3",
+        "release_date": "2023-07-22",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:alb103"
+      },
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Vox Nova", "id": "art104" }],
+        "available_markets": ["US", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb104",
+        "genre": { "key": "folk", "label": "folk" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/oorumblood.png",
+            "width": 640
+          }
+        ],
+        "name": "oorumBlood",
+        "track": "audio/Oorum_Blood.mp3",
+        "release_date": "2024-04-11",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb104"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Synth Pearl", "id": "art105" }],
+        "available_markets": ["US", "IN", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb105",
+        "genre": { "key": "folk", "label": "folk" },
+
+        "images": [
+          {
+            "height": 640,
+            "url": "images/salambala.png",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Salambala",
+        "track": "audio/Salambala.mp3",
+
+        "release_date": "2023-09-30",
+        "release_date_precision": "day",
+        "total_tracks": 8,
+        "type": "album",
+        "uri": "spotify:album:alb105"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Moon Haze", "id": "art106" }],
+        "available_markets": ["IN", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb106",
+        "genre": { "key": "folk", "label": "folk" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/singari.png",
+            "width": 640
+          }
+        ],
+        "name": "singari",
+        "track": "audio/singari.mp3",
+        "release_date": "2024-08-18",
+        "release_date_precision": "day",
+        "total_tracks": 15,
+        "type": "album",
+        "uri": "spotify:album:alb106"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Pulse Machine", "id": "art107" }],
+        "available_markets": ["US", "IN"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb107",
+        "genre": { "key": "pop", "label": "pop" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/ThalapathyKacheri.png",
+            "width": 640
+          }
+        ],
+        "name": "ThalapathyKacheri",
+        "track": "audio/ThalapathyKacheri.mp3",
+        "release_date": "2023-10-27",
+        "release_date_precision": "day",
+        "total_tracks": 9,
+        "type": "album",
+        "uri": "spotify:album:alb107"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Radiant Collective", "id": "art108" }],
+        "available_markets": ["US", "IN", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb108",
+        "genre": { "key": "pop", "label": "pop" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/thangapoovey.png",
+            "width": 640
+          }
+        ],
+        "name": "Thangapoovey",
+        "track": "audio/Thangapoovey.mp3",
+        "release_date": "2024-05-15",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:alb108"
+      },
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Skyline Nova", "id": "art109" }],
+        "available_markets": ["IN", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb109",
+        "genre": { "key": "pop", "label": "pop" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/Theekkoluthi.png",
+            "width": 640
+          }
+        ],
+        "name": "Theekkoluthi",
+        "track": "audio/Theekkoluthi.mp3",
+        "release_date": "2024-07-29",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb109"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Bright Phase", "id": "art110" }],
+        "available_markets": ["EU", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb110",
+        "genre": { "key": "edm", "label": "edm" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/thuglife.png",
+            "width": 640
+          }
+        ],
+        "name": "Muthatha mazhai",
+        "track": "audio/thuglife.mp3",
+        "release_date": "2024-03-16",
+        "release_date_precision": "day",
+        "total_tracks": 10,
+        "type": "album",
+        "uri": "spotify:album:alb110"
+      },
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Bass Pioneers", "id": "art111" }],
+        "available_markets": ["IN"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb111",
+        "genre": { "key": "edm", "label": "edm" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/Vidaamuyarchi.png",
+            "width": 640
+          }
+        ],
+        "name": "Vidaamuyarchi",
+        "track": "audio/Vidaamuyarchi.mp3",
+        "release_date": "2024-09-03",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb111"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Digital Zenith", "id": "art112" }],
+        "available_markets": ["US", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb112",
+        "genre": { "key": "edm", "label": "edm" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/thangapoovey.png",
+            "width": 640
+          }
+        ],
+        "name": "Thangapoovey",
+        "track": "audio/Thangapoovey.mp3",
+        "release_date": "2023-11-08",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:alb112"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "StereoLab", "id": "art113" }],
+        "available_markets": ["IN", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb113",
+        "genre": { "key": "rock", "label": "rock" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/Karuppu.webp",
+            "width": 640
+          }
+        ],
+        "name": "Karuppu",
+        "track": "audio/Karuppu.mp3",
+        "release_date": "2024-06-22",
+        "release_date_precision": "day",
+        "total_tracks": 14,
+        "type": "album",
+        "uri": "spotify:album:alb113"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Synth Lake", "id": "art114" }],
+        "available_markets": ["IN", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb114",
+        "genre": { "key": "edm", "label": "edm" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/Sawadeeka.png",
+            "width": 640
+          }
+        ],
+        "name": "Sawadeeka",
+        "track": "audio/Sawadeeka.mp3",
+        "release_date": "2023-05-30",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:alb114"
+      },
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Crystal Tones", "id": "art115" }],
+        "available_markets": ["US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb115",
+        "genre": { "key": "rock", "label": "rock" },
+        "images": [
+          {
+            "height": 640,
+            "url": "images/thuglife.png",
+            "width": 640
+          }
+        ],
+        "name": "thuglife",
+        "track": "audio/thuglife.mp3",
+        "release_date": "2024-09-17",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb115"
+      }
+    ]
+  }
+}

@@ -1,51 +1,63 @@
 import { redirectUri, clientId } from "../config";
 import { Button } from "@mui/material";
-
+import { useNavigate } from "react-router-dom";
 // PKCE login flow for Spotify
-const CLIENT_ID = clientId;
-const REDIRECT_URI = redirectUri;
-const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
-const SCOPE = "user-read-private user-read-email";
+// const CLIENT_ID = clientId;
+// const REDIRECT_URI = redirectUri;
+// const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
+// const SCOPE = "user-read-private user-read-email";
 
-function base64UrlEncode(str) {
-  return btoa(String.fromCharCode(...new Uint8Array(str)))
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
-}
+// function base64UrlEncode(str) {
+//   return btoa(String.fromCharCode(...new Uint8Array(str)))
+//     .replace(/\+/g, "-")
+//     .replace(/\//g, "_")
+//     .replace(/=+$/, "");
+// }
 
-async function generateCodeChallenge(verifier) {
-  const data = new TextEncoder().encode(verifier);
-  const digest = await crypto.subtle.digest("SHA-256", data);
-  return base64UrlEncode(digest);
-}
+// async function generateCodeChallenge(verifier) {
+//   const data = new TextEncoder().encode(verifier);
+//   const digest = await crypto.subtle.digest("SHA-256", data);
+//   return base64UrlEncode(digest);
+// }
 
-function generateRandomString(length) {
-  const possible =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  let text = "";
-  for (let i = 0; i < length; i++) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-  return text;
-}
+// function generateRandomString(length) {
+//   const possible =
+//     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//   let text = "";
+//   for (let i = 0; i < length; i++) {
+//     text += possible.charAt(Math.floor(Math.random() * possible.length));
+//   }
+//   return text;
+// }
 
-export default function SpotifyLogin() {
+export default function SpotifyLogin({ handleSetToken }) {
+  const navigate = useNavigate();
+
   const handleLogin = async () => {
-    localStorage.removeItem("spotify_token"); // Clear any existing token
-    localStorage.removeItem("code_verifier"); // Clear any existing verifier
-    const verifier = generateRandomString(128);
-    const challenge = await generateCodeChallenge(verifier);
+    // localStorage.getItem("spotify_token");
 
-    localStorage.setItem("code_verifier", verifier);
+    localStorage.setItem("spotify_token", "ganeshToken");
+    sessionStorage.setItem("spotify_token", "ganeshToken")
+    
+    console.log("tokennnn", localStorage.getItem("spotify_token"));
+    handleSetToken(localStorage.getItem("spotify_token"))
 
-    const authUrl = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent(
-      REDIRECT_URI
-    )}&scope=${encodeURIComponent(
-      SCOPE
-    )}&code_challenge_method=S256&code_challenge=${challenge}`;
+    // navigate("/")
 
-    window.location.href = authUrl;
+    // localStorage.removeItem("spotify_token"); // Clear any existing token
+    // localStorage.removeItem("code_verifier"); // Clear any existing verifier
+    // const verifier = generateRandomString(128);
+    // const challenge = await generateCodeChallenge(verifier);
+
+    // localStorage.setItem("code_verifier", verifier);
+
+    // const authUrl = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent(
+    //   REDIRECT_URI
+    // )}&scope=${encodeURIComponent(
+    //   SCOPE
+    // )}&code_challenge_method=S256&code_challenge=${challenge}`;
+
+    // window.location.href = authUrl;
   };
 
   return (
@@ -79,7 +91,7 @@ export default function SpotifyLogin() {
           }}
           variant="contained"
           color="primary"
-          onClick={() => handleLogin()}
+          onClick={handleLogin}
         >
           Login with Spotify
         </Button>

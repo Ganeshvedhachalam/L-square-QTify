@@ -19,24 +19,26 @@ import {
 
 function App() {
   const navigate = useNavigate();
-  const [token, setToken] = useState(localStorage.getItem("spotify_token"));
+  const [token, setToken] = useState(null);
   const [appTheme, setAppTheme] = useState("dark");
 
   useEffect(() => {
-    const token = localStorage.getItem("spotify_token");
-    const expiresAt = localStorage.getItem("token_expires_at");
-     if (!token || !expiresAt || Date.now() > parseInt(expiresAt)) {
-    // token is missing or expired
-    localStorage.removeItem("spotify_token");
-    localStorage.removeItem("token_expires_at");
-    setToken(null);
-  } else {
-    setToken(token);
-  }
+    const tokenLoc = localStorage.getItem("spotify_token");
+    console.log("tokenLoc",tokenLoc)
+    // document.documentElement.setAttribute("data-theme",appTheme)
+  //   const expiresAt = localStorage.getItem("token_expires_at");
+  //    if (!token || !expiresAt || Date.now() > parseInt(expiresAt)) {
+  //   // token is missing or expired
+  //   localStorage.removeItem("spotify_token");
+  //   localStorage.removeItem("token_expires_at");
+  //   setToken(null);
+  // } else {
+    setToken(tokenLoc);
+  // }
     // document.body.setAttribute("data-theme", appTheme);
     // localStorage.removeItem("code_verifier");
     // localStorage.removeItem("spotify_token");
-  }, [appTheme, token]);
+  }, [appTheme, token,setToken]);
 
   // useEffect(() => {
   //   if (process.env.NODE_ENV === "development") {
@@ -87,10 +89,10 @@ function App() {
   // If logged in → show your main UI
   return (
     <Routes>
-      <Route
+      {/* <Route
         path="/callback"
         element={<SpotifyCallback handleSetToken={setToken} />}
-      />
+      /> */}
       <Route
         path="/"
         element={
@@ -116,13 +118,13 @@ function App() {
                     />
                     {/* // apiUrl="https://api.spotify.com/v1/albums/4ecrmvaAeV5JxU0JUJhTFU?market=IN" */}
 
-                    <SongFilterSection />
+                    <SongFilterSection  themeState={appTheme} />
                   </div>
                 </SnackbarProvider>
               </header>
             </div>
           ) : (
-            <SpotifyLogin />
+            <SpotifyLogin handleSetToken={setToken}/>
           )
         }
       />

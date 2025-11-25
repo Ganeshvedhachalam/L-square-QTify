@@ -45,7 +45,7 @@ const SongCarousel = ({ albums }) => {
           {albums.map((album, index) => (
             <SwiperSlide key={index}>
               {/* <AlbumCard album={album} /> */}
-              <SongCard key={album.id} album={album}/>
+              <SongCard key={album?.id} album={album}/>
             </SwiperSlide>
           ))}
         </Swiper>

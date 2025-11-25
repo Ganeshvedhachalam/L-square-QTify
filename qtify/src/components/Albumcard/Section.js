@@ -35,6 +35,8 @@ function Section({ title, apiUrl }) {
 
     const albumType = title === "Top Album" ? "top" : "new";
 
+    const albumUrl = title === "Top Album" ? "data/albums.json":"data/newAlbums.json"
+
     const fetchData = async () => {
       try {
         
@@ -42,14 +44,18 @@ function Section({ title, apiUrl }) {
         if (!token) return;
         // let SpAcessToken = SpotifyToken(clientId, clientSecret);
         console.log("Spotify url:", apiUrl);
-        const response = await axios.get(apiUrl, {
+        
+        // const response = await axios.get(apiUrl, {
           
-          headers: {  Authorization: `Bearer ${token}`, },
-        });
+        //   headers: {  Authorization: `Bearer ${token}`, },
+        // });
 
-        console.log("Fetched albums:", response?.data||"fetchea albums");
+        const response = await axios.get(albumUrl)
 
-        setAlbums(albumType ==="top"?response?.data?.categories?.items  : response?.data?.albums?.items || []);
+
+        console.log("Fetched albums:", response?.data||[]);
+
+        setAlbums(albumType ==="top"?response?.data?.albums?.items  : response?.data?.albums?.items || []);
       } catch (error) {
         console.error("Error fetching albums:", error);
         setAlbums([]);
@@ -85,7 +91,7 @@ function Section({ title, apiUrl }) {
         >
           {title}
         </Typography>
-        <Button onClick={collapsetoggle}>
+        <Button variant="text" onClick={collapsetoggle}>
           {iscollapsed ? <h1>Show carousel</h1> : <h1>Show All</h1>}
         </Button>
       </Grid>

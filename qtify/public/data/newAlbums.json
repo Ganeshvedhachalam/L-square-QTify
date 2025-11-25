@@ -1,0 +1,412 @@
+{
+  "albums": {
+    "items": [
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Cosmic Nova", "id": "art201" }],
+        "available_markets": ["US", "IN", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb201",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Galactic Dance",
+        "release_date": "2025-01-25",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:alb201"
+      },
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Pulse Flow", "id": "art202" }],
+        "available_markets": ["US", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb202",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Fast Lane",
+        "release_date": "2024-10-12",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb202"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Stereo Veil", "id": "art203" }],
+        "available_markets": ["EU", "IN", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb203",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Hidden Layers",
+        "release_date": "2024-05-21",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:alb203"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Echo Foundry", "id": "art204" }],
+        "available_markets": ["US", "IN"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb204",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Factory Beats",
+        "release_date": "2023-08-22",
+        "release_date_precision": "day",
+        "total_tracks": 14,
+        "type": "album",
+        "uri": "spotify:album:alb204"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Fluid Motion", "id": "art205" }],
+        "available_markets": ["IN", "US", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb205",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Ocean Ride",
+        "release_date": "2024-02-14",
+        "release_date_precision": "day",
+        "total_tracks": 13,
+        "type": "album",
+        "uri": "spotify:album:alb205"
+      },
+
+      {
+        "album_type": "album",
+        "artists": [{ "name": "The Luminaires", "id": "art207" }],
+        "available_markets": ["IN", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb207",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Night Streets",
+        "release_date": "2024-12-12",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:alb207"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Solar Vessel", "id": "art208" }],
+        "available_markets": ["US", "IN", "EU"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb208",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Ship To The Sun",
+        "release_date": "2023-03-18",
+        "release_date_precision": "day",
+        "total_tracks": 10,
+        "type": "album",
+        "uri": "spotify:album:alb208"
+      },
+
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Digital Mosaic", "id": "art211" }],
+        "available_markets": ["EU", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb211",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Digital Tides",
+        "release_date": "2024-11-26",
+        "release_date_precision": "day",
+        "total_tracks": 9,
+        "type": "album",
+        "uri": "spotify:album:alb211"
+      },
+
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Sound Grid", "id": "art214" }],
+        "available_markets": ["US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb214",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Grid Force",
+        "release_date": "2024-02-22",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb214"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "WaveVector", "id": "art216" }],
+        "available_markets": ["IN", "US"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb216",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Wave Front",
+        "release_date": "2024-04-15",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:alb216"
+      },
+      {
+        "album_type": "single",
+        "artists": [{ "name": "Horizon Cast", "id": "art217" }],
+        "available_markets": ["EU", "IN"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb217",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Far Away Echoes",
+        "release_date": "2023-11-20",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:alb217"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Neon Drift", "id": "art218" }],
+        "available_markets": ["US", "IN", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb218",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Velocity",
+        "release_date": "2025-05-28",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:alb218"
+      },
+      {
+        "album_type": "album",
+        "artists": [{ "name": "Arpeggio Clouds", "id": "art219" }],
+        "available_markets": ["IN", "GB"],
+        "external_urls": { "spotify": "#" },
+        "href": "#",
+        "id": "alb219",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=640",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=300",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=64",
+            "width": 64
+          }
+        ],
+        "name": "Cloud Variations",
+        "release_date": "2023-11-09",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:alb219"
+      }
+    ]
+  }
+}
