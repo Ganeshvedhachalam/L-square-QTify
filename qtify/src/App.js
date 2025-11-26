@@ -24,21 +24,21 @@ function App() {
 
   useEffect(() => {
     const tokenLoc = localStorage.getItem("spotify_token");
-    console.log("tokenLoc",tokenLoc)
+    console.log("tokenLoc", tokenLoc);
     // document.documentElement.setAttribute("data-theme",appTheme)
-  //   const expiresAt = localStorage.getItem("token_expires_at");
-  //    if (!token || !expiresAt || Date.now() > parseInt(expiresAt)) {
-  //   // token is missing or expired
-  //   localStorage.removeItem("spotify_token");
-  //   localStorage.removeItem("token_expires_at");
-  //   setToken(null);
-  // } else {
+    //   const expiresAt = localStorage.getItem("token_expires_at");
+    //    if (!token || !expiresAt || Date.now() > parseInt(expiresAt)) {
+    //   // token is missing or expired
+    //   localStorage.removeItem("spotify_token");
+    //   localStorage.removeItem("token_expires_at");
+    //   setToken(null);
+    // } else {
     setToken(tokenLoc);
-  // }
+    // }
     // document.body.setAttribute("data-theme", appTheme);
     // localStorage.removeItem("code_verifier");
     // localStorage.removeItem("spotify_token");
-  }, [appTheme, token,setToken]);
+  }, [appTheme, token, setToken]);
 
   // useEffect(() => {
   //   if (process.env.NODE_ENV === "development") {
@@ -92,7 +92,7 @@ function App() {
       {/* <Route
         path="/callback"
         element={<SpotifyCallback handleSetToken={setToken} />}
-      /> */}
+        /> */}
       <Route
         path="/"
         element={
@@ -118,13 +118,13 @@ function App() {
                     />
                     {/* // apiUrl="https://api.spotify.com/v1/albums/4ecrmvaAeV5JxU0JUJhTFU?market=IN" */}
 
-                    <SongFilterSection  themeState={appTheme} />
+                    <SongFilterSection themeState={appTheme} />
                   </div>
                 </SnackbarProvider>
               </header>
             </div>
           ) : (
-            <SpotifyLogin handleSetToken={setToken}/>
+            <SpotifyLogin handleSetToken={setToken} />
           )
         }
       />

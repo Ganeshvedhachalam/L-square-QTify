@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { FastRewind } from "@mui/icons-material";
 import {
   Button,
@@ -8,25 +9,62 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-import { useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+
+import { AudioContext } from "../../context/AudioContext";
 
 function SongCard({ album }) {
+  const { setCurrentAudio,currentAudioId } = useContext(AudioContext);
+
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null)
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const handlePlay = () => {
+      setCurrentAudio(audio, album.id);
+      setIsPlaying(true);
+    };
+
+    const handlePause = () => {
+      setIsPlaying(false);
+    };
+
+    audio.addEventListener("play", handlePlay);
+    audio.addEventListener("pause", handlePause);
+
+    return () => {
+      audio.removeEventListener("play", handlePlay);
+      audio.removeEventListener("pause", handlePause);
+    };
+  }, [album.id, setCurrentAudio]);
+
+  useEffect(() => {
+    if (!audioRef.current) {
+      return;
+    }
+
+    if (currentAudioId !== album.id && isPlaying) {
+      audioRef?.current?.pause();
+      audioRef.current.currentTime = 0;
+      setIsPlaying(false);
+    }
+  }, [ currentAudioId,album?.id, isPlaying]);
 
   const togglePlay = () => {
-
-     if (!audioRef.current){
-      return 
-     }
-     if(isPlaying){
-      audioRef.current.pause()
-     }else{
-      audioRef.current.play()
-     }
-
-    setIsPlaying((prev) => !prev);
-
+    if (!audioRef.current) {
+      return;
+    }
+    if (!isPlaying) {
+      // setCurrentAudio(audioRef.current, album.id);
+      audioRef.current.play();
+      // setIsPlaying(true);
+    } else {
+      audioRef.current.pause();
+      // setIsPlaying(false);
+    }
   };
 
   return (
@@ -75,14 +113,23 @@ function SongCard({ album }) {
         {album.name}
       </Typography>
 
-       <CardActionArea style={{padding:0,width:"100%"}}>
+      <CardActionArea style={{ padding: 0, width: "100%" }}>
         {/* <audio style={{width:"90%" ,backgroundColor:"",border:"" }} ref={audioRef}  controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto"/> */}
-        <audio style={{width:"90%" ,border:"",backgroundColor:""}} ref={audioRef} controls src={album?.track||" "} preload="auto"/>
-        
-        
-       </CardActionArea>
-        
-      
+        <audio
+          style={{ width: "90%", border: "", backgroundColor: "" }}
+          ref={audioRef}
+          controls
+          // onPlay={() => {
+          //   setCurrentAudio(audioRef.current);
+          //   setIsPlaying(true);
+          // }}
+          // onPause={() => {
+          //   setIsPlaying(false);
+          // }}
+          src={album?.track || " "}
+          preload="auto"
+        />
+      </CardActionArea>
 
       <Button onClick={togglePlay}>{isPlaying ? "pause" : "play"}</Button>
     </Card>
